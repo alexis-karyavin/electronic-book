@@ -24,10 +24,8 @@ export default {
     source: String
   },
 
-  methods: {
-    toggle() {
-      console.log("toggle")
-    }
+  mounted() {
+    this.$store.dispatch('GET_DATA');
   },
 
   data: () => ({
